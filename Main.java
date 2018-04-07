@@ -15,6 +15,7 @@ public class Main extends Application {
 
         primaryStage.setTitle("Pokemon Battle Simulator");
 
+        /*
         Label label1 = new Label("Player 1");
         Button pikachuButton = new Button("Pikachu");
         Button treeckoButton = new Button("Treecko");
@@ -34,8 +35,9 @@ public class Main extends Application {
         VBox layout2 = new VBox();
         layout2.getChildren().addAll(label2, meowthButton, snivyButton, cyndaquilButton, mudkipButton);
         Scene scene2 = new Scene(layout2, 300, 300);
+        */
 
-        primaryStage.setScene(scene1);
+        //primaryStage.setScene(scene1);
         primaryStage.show();
 
     }
