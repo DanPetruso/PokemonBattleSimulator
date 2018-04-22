@@ -18,8 +18,10 @@ public class Type {
     final static int STEEL = 16;
     final static int FAIRY = 17;
 
+    static double [][] chart;
+
     public Type(){
-        double[][] chart = new double[18][18];
+        chart = new double[18][18];
 
         //sets the default value for any type vs any other type to be 1 for neutral damage
         for(int i = 0; i < chart.length; i++){
