@@ -21,14 +21,6 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
-        /*if (Battle.goPressed){
-            scene = new Scene(Battle.setScene(dex.pikachu, dex.meowth), 300, 200);
-            primaryStage.setScene(scene);
-            primaryStage.show();
-
-        }*/
-
-
 
     }
 

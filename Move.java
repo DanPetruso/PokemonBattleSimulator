@@ -5,6 +5,11 @@ public class Move {
     int type;
     boolean isPhysical;
 
+    @Override
+    public String toString() {
+        return this.name;
+    }
+
     public Move(String name, int type, int power, int accuracy, boolean isPhysical){
         this.name = name;
         this.type = type;

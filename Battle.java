@@ -54,10 +54,16 @@ public class Battle {
             int damage = attack(pkmn2, pkmn1, move1.getValue());
             pkmn2.hp -= damage;
             System.out.println(pkmn2.name + " lost " + damage + " HP!");
+            if(pkmn2.checkDead()){
+
+            }
 
             damage = attack(pkmn1, pkmn2, move2.getValue());
             pkmn1.hp -= damage;
             System.out.println(pkmn1.name + " lost " + damage + " HP!\n");
+            if(pkmn1.checkDead()){
+
+            }
         }
 
         else{

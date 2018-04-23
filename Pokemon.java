@@ -1,5 +1,6 @@
 public class Pokemon {
 
+    boolean dead;
     String name;
     int maxHp, hp, attk, def, spattk, spdef, spd, type;
     Move move1, move2, move3, move4;
@@ -19,10 +20,13 @@ public class Pokemon {
         this.move2 = move2;
         this.move3 = move3;
         this.move4 = move4;
+        this.dead = false;
     }
 
-    public void takeHit(int damage){
-        this.hp -= damage;
+    public boolean checkDead(){
+        if(this.hp <= 0)
+            dead = true;
+        return dead;
     }
 
     public int physDamage(double otherPkmnAttk, Move move){
